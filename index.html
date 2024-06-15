@@ -7,6 +7,7 @@
     <title>ABC Fashion</title>
     <script src="https://kit.fontawesome.com/5889382239.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <section id="header">
@@ -18,10 +19,16 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
+        <div id="mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
     </section>
+    <script src="script.js"></script>
     <section id="hero">
         <h4>Get Offers Now</h4>
         <h2>Super Value Deals</h2>
@@ -31,24 +38,28 @@
     </section>
     <section id="features" >
         <div class="fe-box" >
-            <img src="im-2.jpg" alt="t-shirt" >
-            <h6>T-Shirt</h6>
+            <img src="im-2.jpeg" alt="img" >
+            <h6>Cool Summer</h6>
         </div>
         <div class="fe-box" >
-            <img src="im-3.jpg" alt="Jacket" >
-            <h6>Jacket</h6>
+            <img src="im-3.jpeg" alt="img" >
+            <h6>Office Formals</h6>
         </div>
         <div class="fe-box" >
-            <img src="im-4.jpeg" alt="shirt" >
-            <h6>Shirt</h6>
+            <img src="im-4.jpg" alt="img" >
+            <h6>Party Girl</h6>
         </div>
         <div class="fe-box" >
-            <img src="im-5.jpeg" alt="bottom" >
-            <h6>Bottoms</h6>
+            <img src="im-5.jpg" alt="img" >
+            <h6>On Holiday</h6>
+        </div>
+        <div class="fe-box">
+            <img src="im-32.jpg" alt="img">
+            <h6>On The Street</h6>
         </div>
         <div class="fe-box" >
-            <img src="im-6.webp" alt="cord" >
-            <h6>Cord-Set</h6>
+            <img src="im-6.webp" alt="img" >
+            <h6>Go Ethnic</h6>
         
     </section>
     <section id="product" class="section-p1">
@@ -56,10 +67,10 @@
         <p>Be the first to wear the newest trends in town</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="im-7.webp" alt="">
+                <img src="im-7.jpg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Printed Summer Shirt</h5>
+                    <span>Flora</span>
+                    <h5>Floral Print Summer Dress</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -72,10 +83,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-8.webp" alt="">
+                <img src="im-9.jpg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>White Trecking Down Jacket</h5>
+                    <span>Moire</span>
+                    <h5>Grey Formal Suit</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -88,10 +99,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-9.webp" alt="">
+                <img src="im-10.jpeg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Black Denim jacket</h5>
+                    <span>Pony</span>
+                    <h5>Black Sequin Dress</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -104,10 +115,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-10.avif" alt="">
+                <img src="im-11.jpg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Retro Denim Jacket</h5>
+                    <span>Flora</span>
+                    <h5>Pink Mid Ball Gown</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -120,10 +131,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-11.jpg" alt="">
+                <img src="im-12.webp" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Solid Black T-Shirt</h5>
+                    <span>Lin</span>
+                    <h5>Blue Anarkali Set</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -136,10 +147,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-12.avif" alt="">
+                <img src="im-8.jpg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Green Solid T-Shirt</h5>
+                    <span>Flora</span>
+                    <h5>Peach Summer Dress</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -152,10 +163,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-13.webp" alt="">
+                <img src="im-13.jpg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Printed Black T-Shirt</h5>
+                    <span>Moire</span>
+                    <h5>Grey Formal Blazer with Trouser</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -170,8 +181,8 @@
             <div class="pro">
                 <img src="im-14.webp" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Teal Co-ord Sets</h5>
+                    <span>Moon</span>
+                    <h5>Olive Co-ord Set</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -193,10 +204,10 @@
         <p>Be the first to wear the newest trends in town</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="im-16.jpg" alt="">
+                <img src="im-16.avif" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Printed Summer Shirt</h5>
+                    <span>Moon</span>
+                    <h5>Black Jumpsuit</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -211,8 +222,8 @@
             <div class="pro">
                 <img src="im-17.jpg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Printed Summer T-shirt</h5>
+                    <span>Moon</span>
+                    <h5>Red Silk Dress</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -225,10 +236,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-18.webp" alt="">
+                <img src="im-18.jpg" alt="">
                 <div class="des">
                     <span>PUMA</span>
-                    <h5>Black leather jacket</h5>
+                    <h5>Black Printed T-Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -243,8 +254,8 @@
             <div class="pro">
                 <img src="im-19.jpg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Block Windcheater Jacket</h5>
+                    <span>Demi</span>
+                    <h5>Bell-Bottom Denim</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -259,8 +270,8 @@
             <div class="pro">
                 <img src="im-20.avif" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5> Cotton Bomber Jacket</h5>
+                    <span>Myra</span>
+                    <h5> Pink Salwar Set</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -273,10 +284,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-21.avif" alt="">
+                <img src="im-21.webp" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>White Printed T-Shirt</h5>
+                    <span>Myra</span>
+                    <h5>Teal Grean Anarkali</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -289,10 +300,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-22.avif" alt="">
+                <img src="im-22.jpg" alt="">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>Navy Blue & White T-Shirt</h5>
+                    <span>Moon</span>
+                    <h5>White Cord Set</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -305,10 +316,10 @@
                 <a href="#" class="cart"><i  class="fa-solid fa-cart-shopping" style="color: #088178; border: 1px solid #cce7d0; border-radius: 50px; line-height: 40px; width: 40px;height: 40px;position: absolute;bottom: 20px;right: 10px; "></i></a>
             </div>
             <div class="pro">
-                <img src="im-23.webp" alt="">
+                <img src="im-24.jpg">
                 <div class="des">
-                    <span>PUMA</span>
-                    <h5>white tropical printed cord set</h5>
+                    <span>Flora</span>
+                    <h5>Blue tropical printed Dress</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

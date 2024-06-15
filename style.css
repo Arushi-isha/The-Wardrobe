@@ -42,12 +42,12 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5px 80px;
-    background: #6586ba7b;
+    background: rgba(218, 219, 243, 0.9);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    box-shadow: 0px 52px 49px rgba(215, 215, 215, 0.8);
 }
 #navbar {
     display: flex;
@@ -72,7 +72,8 @@ body {
 }
 #navbar li a:hover,
 #navbar li a.active {
-    color: #088178;
+    text-shadow: 0px 0px 19px rgba(1, 1, 1, 0.7);
+    color: #088178
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
@@ -84,9 +85,17 @@ body {
     bottom: -4px;
     left: 20px;
 }
+#mobile {
+    cursor:pointer;
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
 /*home page*/
 #hero {
-    background-image: url('images.jpg');
+    background-image: url('images1.jpg');
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -151,7 +160,8 @@ body {
     flex-wrap: wrap;
 }
 #features .fe-box{
-    width: 250px;
+    width: 220px;
+    height: 380px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -164,13 +174,13 @@ body {
 }
 #features .fe-box img{
     width: 100%;
-    height:300px;
+    height:280px;
     margin-bottom: 10px;
     align-content: center;
     justify-content: center;
 }
 #features .fe-box:hover{
-    box-shadow: 20px 10px 54px rgba(70,62,221,0.1);
+    box-shadow: 20px 10px 54px rgba(146, 184, 233, 0.8);
 }
 #features .fe-box h6{
     padding: 9px 8px 6px 8px;
@@ -388,4 +398,64 @@ footer .follow i{
 footer .copyright{
     width: 100%;
     text-align: center;
+}
+@media (max-width:799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30% ;
+    }
+    #features{
+        justify-content: center;
+    }
+    #product .pro-container{
+        justify-content: center;
+    }
+    #product .pro{
+        margin: 15px;
+    }
+    #sm-banner .banner-box{
+        min-width: 100%;
+        height: 30vh;
+    }
 }
